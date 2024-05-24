@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=WindSong:wght@400;500&display=swap');
+
+
+:root {
+    --cor1: white;
+    --cor2: #1A0B2E;
+    --cor3: #11071F;
+    --cor4: #7127BA;
+    --tamanho-font: 0.5em;
+    --tamanho-font2: 2em;
+    --font1: "Preahvihear", "sans-serif";
+}
+
+
+* {
+    color: var(--cor1);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font1);
+    background-color: var(--cor3);
+}
+
+header {
+    padding: 0px 130px;
+
+    background-color: var(--cor2);
+    color: var(--cor1);
+    height: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo {
+    padding: 30px;
+}
+
+nav {
+    display: flex; 
+    justify-content: flex-end;
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 20px 90px;
+    text-align: right;
+}
+
+main {
+    margin: 134px;
+}
+
+section {
+    margin: 50px 0px 50px 0;
+}
+
+section#apresentacao {
+    display: flex;
+    align-items: center; 
+    padding: 30px; 
+}
+
+#apresentacao div {
+    font-size: var(--tamanho-font2);
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-left: 30px; 
+}
+
+.ajustar {
+    margin-bottom: -18px;
+    font-size: var(--tamanho-font);
+}
+
+.cor {
+    color: var(--cor4);
+
+}
