@@ -7,7 +7,7 @@
     --cor3: #11071F;
     --cor4: #7127BA;
     --tamanho-font: 0.5em;
-    --tamanho-font2: 2em;
+    --tamanho-font2: 1.8em;
     --font1: "Preahvihear", "sans-serif";
 }
 
@@ -51,7 +51,8 @@ nav > a {
 }
 
 main {
-    margin: 134px;
+    margin-top: 134px;
+    margin-left: 178px;
 }
 
 section {
@@ -70,6 +71,17 @@ section#apresentacao {
     flex-direction: column; 
     align-items: flex-start;
     margin-left: 30px; 
+}
+
+.mensagem_segundaria {
+    width: 462px;
+    text-align: right;
+    margin-top: -13px;
+    font-size: var(--tamanho-font);
+}
+
+.mensagem_segundaria > a {
+    text-decoration: underline;
 }
 
 .ajustar {
