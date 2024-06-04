@@ -1,83 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eu te amo</title>
     <link rel="stylesheet" href="style.css">
-    <title>Davi Alves de Lima</title>
 </head>
 <body>
-    <header>
-        <h1 class="logo">Davi Alves</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">GitHub</a>
-        </nav>
-    </header>
-
-    <main>
-
-
-        <section id="apresentacao">
-
-            <img src="fotos/Me.png" alt="foto computador">
-
-            <div>
-                <span class="ajustar"><p>Olá, meu nome e <span class="cor">Davi</span></p></span>
-                <h2>Sou estudante de TI</h2>
-                <p class="mensagem_segundaria" >Dê uma olhada no meu <a href="https://github.com/Davilima00" target="_blank" class="cor">GitHub</a></p>
-
-            </div>
-
-        </section>
-
-        <section>
-
-            <h2>Onde eu estudo TI na <span class="cor">intenet?</span></h2>
-            <p>como estudante de TI eu procuro ter mais de uma fonte de informação</p>
-
-
-            <ul class="cursos ">
-                <li class="animated-border">
-                    <a href="https://www.cursoemvideo.com" target="_blank">Curso em video</a>
-                </li>
-                <li class="animated-border">
-                    <a href="https://www.w3schools.com" target="_blank">W3school</a>
-                </li>
-                <li class="animated-border">
-                    <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank">Color.abode</a>
-                </li>
-                <li class="animated-border">
-                    <a href="https://www.figma.com" target="_blank">Figma</a>
-                </li>
-                <li class="animated-border">
-                    <a href="https://css-tricks.com" target="_blank">Css-Tricks</a>
-                </li>
-                <li class="animated-border">
-                    <a href="https://roadmap.sh" target="_blank">Roadmap</a>
-                </li>
-
-            </ul>
-        </section>
-
-        <section id="contato">
-            <h2>Fale <span class="cor">comigo</span></h2>
-            
-            
-
-
-        </section>
-
-
-
-    </main>
-
-    <footer>
-
-
-    </footer>
+    <div class="container">
+        <h1>Tenho uma pergunta para você...</h1>
+        <button id="askButton">Clique aqui</button>
+        <p id="message"></p>
+        <div id="responseButtons" class="hidden">
+            <button id="yesButton">Sim</button>
+            <button id="noButton">Não</button>
+        </div>
+        <p id="responseMessage"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
 
