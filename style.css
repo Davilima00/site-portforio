@@ -1,47 +1,121 @@
-body {
-    background-color: #f0e4d7;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=WindSong:wght@400;500&display=swap');
+
+
+:root {
+    --cor1: white;
+    --cor2: #1A0B2E;
+    --cor3: #11071F;
+    --cor4: #7127BA;
+    --tamanho-font: 0.5em;
+    --tamanho-font2: 1.8em;
+    --font1: "Preahvihear", "sans-serif";
+}
+
+
+* {
+    color: var(--cor1);
     margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
-.container {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+body {
+    font-family: var(--font1);
+    background-color: var(--cor3);
 }
 
-h1 {
-    color: #333;
+header {
+    padding: 0px 130px;
+
+    background-color: var(--cor2);
+    color: var(--cor1);
+    height: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
 }
 
-button {
-    background-color: #ff69b4;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 5px;
+.logo {
+    padding: 30px;
 }
 
-button:hover {
-    background-color: #ff1493;
+nav {
+    display: flex; 
+    justify-content: flex-end;
 }
 
-#message, #responseMessage {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #333;
+nav > a {
+    color: var(--cor1);
+    padding: 20px 90px;
+    text-align: right;
 }
 
-.hidden {
-    display: none;
+main {
+    margin-top: 134px;
+    margin-left: 178px;
+}
+
+section {
+    margin: 50px 0px 50px 0;
+}
+
+section#apresentacao {
+    display: flex;
+    align-items: center; 
+    padding: 30px; 
+}
+
+#apresentacao div {
+    font-size: var(--tamanho-font2);
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-left: 30px; 
+}
+
+.mensagem_segundaria {
+    width: 462px;
+    text-align: right;
+    margin-top: -13px;
+    font-size: var(--tamanho-font);
+}
+
+.mensagem_segundaria > a {
+    text-decoration: underline;
+}
+
+.ajustar {
+    margin-bottom: -18px;
+    font-size: var(--tamanho-font);
+}
+
+.cor {
+    color: var(--cor4);
+
+}
+
+.cursos {
+    padding: 40px;
+}
+
+.cursos > li {
+    margin-left: 10px;
+    padding: 10px 60px 10px 10px;
+    width: 200px;
+    position: relative;
+}
+
+.animated-border::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.5s ease;
+}
+
+.animated-border:hover::before {
+    width: 100%;
 }
